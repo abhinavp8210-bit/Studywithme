@@ -3,113 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Study Website</title>
+    <title>Meri First Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-        }
-        header {
-            background: #007bff;
-            color: white;
-            padding: 15px;
             text-align: center;
-        }
-        nav {
-            background: #0056b3;
-            display: flex;
-            justify-content: center;
-        }
-        nav a {
+            background: linear-gradient(to right, #ff9966, #66ccff);
             color: white;
-            padding: 12px;
-            text-decoration: none;
+            padding: 50px;
         }
-        nav a:hover {
-            background: #003d80;
+        h1 {
+            font-size: 3em;
         }
-        section {
-            padding: 20px;
-        }
-        .notes a {
-            display: block;
-            margin-bottom: 10px;
-            color: #007bff;
-        }
-        .quiz {
-            background: white;
-            padding: 15px;
-            border-radius: 5px;
+        p {
+            font-size: 1.2em;
         }
         button {
-            background: #007bff;
-            color: white;
-            padding: 8px 12px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background: white;
+            color: black;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
         button:hover {
-            background: #0056b3;
+            background: yellow;
         }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>📚 My Study Website</h1>
-    <p>Notes | MCQ Tests | Learning Hub</p>
-</header>
-
-<nav>
-    <a href="#notes">Notes</a>
-    <a href="#quiz">MCQ Test</a>
-</nav>
-
-<section id="notes">
-    <h2>📒 Notes Section</h2>
-    <div class="notes">
-        <a href="https://example.com/note1.pdf" target="_blank">Chapter 1 - PDF Notes</a>
-        <a href="https://example.com/note2.pdf" target="_blank">Chapter 2 - PDF Notes</a>
-        <a href="https://example.com/note3.pdf" target="_blank">Chapter 3 - PDF Notes</a>
-    </div>
-</section>
-
-<section id="quiz">
-    <h2>📝 MCQ Test</h2>
-    <div class="quiz">
-        <p>1. What is the capital of India?</p>
-        <input type="radio" name="q1" value="Delhi"> Delhi<br>
-        <input type="radio" name="q1" value="Mumbai"> Mumbai<br>
-        <input type="radio" name="q1" value="Kolkata"> Kolkata<br>
-
-        <p>2. 5 + 3 = ?</p>
-        <input type="radio" name="q2" value="7"> 7<br>
-        <input type="radio" name="q2" value="8"> 8<br>
-        <input type="radio" name="q2" value="9"> 9<br>
-
-        <p>3. HTML stands for?</p>
-        <input type="radio" name="q3" value="Hyper Text Markup Language"> Hyper Text Markup Language<br>
-        <input type="radio" name="q3" value="High Text Machine Language"> High Text Machine Language<br>
-        <input type="radio" name="q3" value="None"> None<br>
-
-        <br>
-        <button onclick="checkAnswers()">Submit</button>
-        <p id="result"></p>
-    </div>
-</section>
-
-<script>
-function checkAnswers() {
-    let score = 0;
-    if (document.querySelector('input[name="q1"]:checked')?.value === "Delhi") score++;
-    if (document.querySelector('input[name="q2"]:checked')?.value === "8") score++;
-    if (document.querySelector('input[name="q3"]:checked')?.value === "Hyper Text Markup Language") score++;
-    
-    document.getElementById("result").innerText = "Your Score: " + score + "/3";
-}
-</script>
-
+    <h1>🚀 Welcome to My Website!</h1>
+    <p>Yeh meri pehli GitHub Pages website hai.</p>
+    <button onclick="alert('Thanks for visiting!')">Click Me</button>
 </body>
-      </html>
+</html>
